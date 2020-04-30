@@ -13,6 +13,10 @@
 		9DDBBD112113609800A55978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDBBD0F2113609800A55978 /* LaunchScreen.storyboard */; };
 		9DDBBD19211360D100A55978 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD18211360D100A55978 /* Planet.swift */; };
 		9DDBBD1F211360F500A55978 /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD1E211360F500A55978 /* PlanetController.swift */; };
+		E1FF8B1C245A69C50041DCE9 /* PlanetsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FF8B1B245A69C50041DCE9 /* PlanetsCollectionViewController.swift */; };
+		E1FF8B1E245A69EB0041DCE9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FF8B1D245A69EB0041DCE9 /* SettingsViewController.swift */; };
+		E1FF8B23245A6AC30041DCE9 /* PlanetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FF8B22245A6AC30041DCE9 /* PlanetCollectionViewCell.swift */; };
+		E1FF8B25245A762A0041DCE9 /* SettingsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FF8B24245A762A0041DCE9 /* SettingsKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9DDBBD122113609800A55978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DDBBD18211360D100A55978 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		9DDBBD1E211360F500A55978 /* PlanetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
+		E1FF8B1B245A69C50041DCE9 /* PlanetsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsCollectionViewController.swift; sourceTree = "<group>"; };
+		E1FF8B1D245A69EB0041DCE9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E1FF8B22245A6AC30041DCE9 /* PlanetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCollectionViewCell.swift; sourceTree = "<group>"; };
+		E1FF8B24245A762A0041DCE9 /* SettingsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,8 @@
 		27F670EB21EFC6AA0035C1BF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E1FF8B1B245A69C50041DCE9 /* PlanetsCollectionViewController.swift */,
+				E1FF8B1D245A69EB0041DCE9 /* SettingsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -67,7 +77,9 @@
 				27F670EB21EFC6AA0035C1BF /* View Controllers */,
 				9DDBBD1A211360D500A55978 /* Model */,
 				9DDBBD1C211360E000A55978 /* Model Controller */,
+				E1FF8B1F245A6A2A0041DCE9 /* Views */,
 				9DDBBD1B211360DA00A55978 /* Resources */,
+				E1FF8B24245A762A0041DCE9 /* SettingsKeys.swift */,
 			);
 			path = Planets;
 			sourceTree = "<group>";
@@ -97,6 +109,14 @@
 				9DDBBD1E211360F500A55978 /* PlanetController.swift */,
 			);
 			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		E1FF8B1F245A6A2A0041DCE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1FF8B22245A6AC30041DCE9 /* PlanetCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +193,11 @@
 			files = (
 				9DDBBD1F211360F500A55978 /* PlanetController.swift in Sources */,
 				9DDBBD072113609700A55978 /* AppDelegate.swift in Sources */,
+				E1FF8B23245A6AC30041DCE9 /* PlanetCollectionViewCell.swift in Sources */,
+				E1FF8B1C245A69C50041DCE9 /* PlanetsCollectionViewController.swift in Sources */,
+				E1FF8B1E245A69EB0041DCE9 /* SettingsViewController.swift in Sources */,
 				9DDBBD19211360D100A55978 /* Planet.swift in Sources */,
+				E1FF8B25245A762A0041DCE9 /* SettingsKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = "$(SRCROOT)/Planets/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,6 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = "$(SRCROOT)/Planets/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
